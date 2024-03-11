@@ -1,0 +1,59 @@
+<div class="card-container">
+	<div class="card card-left">
+	  <img src="{{url}}" alt="Large Image">
+	</div>
+	<div class="card card-right">
+	  <div class="card">
+		<img src="{{url}}" alt="Small Image 1">
+	  </div>
+	  <div class="card">
+		<img src="{{url}}" alt="Small Image 2">
+	  </div>
+	  <div class="card">
+		<img src="{{url}}" alt="Small Image 3">
+	  </div>
+	  <div class="card">
+		<img src="{{url}}" alt="Small Image 4">
+	  </div>
+	  <div class="card">
+		<img src="{{url}}" alt="Small Image 5">
+	  </div>
+	  <div class="card">
+		<img src="{{url}}" alt="Small Image 6">
+	  </div>
+	</div>
+  </div>
+  
+  <style>
+  /* CSS styling for the card container and cards */
+  .card-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 20px;
+	padding: 20px;
+  }
+  .card {
+	background-color: #7a0000;
+	box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+	border-radius: 4px;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  }
+  .card img {
+	width: 100%;
+	height: auto;
+  }
+  .card-left {
+	grid-column: 1 / 2;
+  }
+  .card-right {
+	grid-column: 2 / 3;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 10px;
+  }
+  </style>
+  
